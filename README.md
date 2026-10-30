@@ -14,4 +14,13 @@
 
 ### Estoque de produtos
 &emsp;Antes de iniciar o desenvolvimento do sistema, foi necessário criar um estoque de produtos, preferencialmente em um arquivo separado para simular as vendas. O estoque foi feito usando um arquivo de cabeçalho chamado `ddl.hpp`, cujo nome apresenta de forma clara a função de definir a estrutura de dados do projeto. O arquivo contém a definição da estrutura `Produto`, que representa um produto no estoque, e um vetor de produtos chamado `bancoDados`, que armazena todos os produtos disponíveis. Também foi criado um arquivo chamado `dml.cpp`, para popular o vetor `bancoDados` com produtos fictícios, simulando um estoque inicial. <br>
-&emsp;Um dos maiores desafios durante o desenvolvimento dessa etapa foi a compilação, visto que o VS Code não reconhecia o arquivo `dml.cpp` como parte do projeto, resultando em erros de compilação. Para resolver esse problema, foi necessário configurar o arquivo `tasks.json` para incluir o arquivo `dml.cpp` na compilação, garantindo que o vetor `bancoDados` fosse corretamente populado com os produtos fictícios.
+&emsp;Um dos maiores desafios durante o desenvolvimento dessa etapa foi a compilação, visto que ao dividir em vários arquivos, o VS Code não reconhecia o arquivo `dml.cpp` como parte do projeto, resultando em erros de compilação. Para resolver esse problema, foi necessário configurar o arquivo `tasks.json` para incluir o arquivo `dml.cpp` na compilação, garantindo que o vetor `bancoDados` fosse corretamente populado com os produtos fictícios. Porém, mesmo com essa configuração, o VS Code ainda não reconhecia o arquivo `dml.cpp` como parte do projeto em minha maquina, o que exigiu também o uso do comando de terminal:
+
+```
+g++ main.cpp dml.cpp -o programa
+```
+```
+.\programa.exe
+```
+
+&emsp;Nota-se que esse último comando funciona apenas no terminal do Windows, e não em outros terminais como do VS Code, para isso, usa-se `./programa`.
