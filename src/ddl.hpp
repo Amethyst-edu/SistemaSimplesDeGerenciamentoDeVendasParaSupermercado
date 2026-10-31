@@ -20,8 +20,9 @@ struct Produto {
     std::string dataValidade;
     std::string dataFabricacao;
     std::string descricao;
-    std::string quantidade;
+    int quantidade; // Como eu deixei passar isso kkkkkkk quantidade em string ;-;
 };
+
 
 extern std::vector<Categoria> categorias;
 extern std::vector<Produto> bancoDados;

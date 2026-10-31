@@ -6,7 +6,6 @@
 
 ## Apresentação do projeto e documentação do desenvolvimento
 - [Apresentação](#apresentação)
-
 - [Estoque de produtos](#estoque-de-produtos)
 
 ### Apresentação
@@ -23,4 +22,5 @@ g++ main.cpp dml.cpp -o programa
 .\programa.exe
 ```
 
-&emsp;Nota-se que esse último comando funciona apenas no terminal do Windows, e não em outros terminais como do VS Code, para isso, usa-se `./programa`.
+&emsp;Nota-se que esse último comando funciona apenas no terminal do Windows, e não em outros terminais como do VS Code, no lugar, usa-se `./programa`.
+&emsp;Após fazer a criação dos arquivos auxiliares e testá-los, eu percebi que precisava incluir uma árvore de busca binária, que era um requisito do projeto. 
