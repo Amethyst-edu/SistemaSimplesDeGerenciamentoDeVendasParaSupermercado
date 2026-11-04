@@ -20,11 +20,21 @@ struct Produto {
     std::string dataValidade;
     std::string dataFabricacao;
     std::string descricao;
-    int quantidade; // Como eu deixei passar isso kkkkkkk quantidade em string ;-;
+    int quantidade; 
 };
 
+struct NoProduto {
+    Produto produto;
+    NoProduto* l;
+    NoProduto* r;
+
+    NoProduto(Produto p) : produto(p), l(nullptr), r(nullptr) {}
+};
 
 extern std::vector<Categoria> categorias;
-extern std::vector<Produto> bancoDados;
+extern NoProduto* raizProdutos;
 
+void inserirProduto(NoProduto*& raiz, const Produto& p);
+void buscarProduto(int id, NoProduto* no, Produto& produtoEncontrado, bool& encontrado);
+void catalogoAntigo(NoProduto*& raiz);
 #endif

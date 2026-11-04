@@ -7,6 +7,7 @@
 ## Apresentação do projeto e documentação do desenvolvimento
 - [Apresentação](#apresentação)
 - [Estoque de produtos](#estoque-de-produtos)
+- [Árvore de busca binária](#árvore-de-busca-binária)
 
 ### Apresentação
 &emsp;O projeto consiste em um sistema simples de gerenciamento de vendas para um supermercado, desenvolvido em C++. O sistema permite cadastrar produtos, realizar vendas e gerar relatórios de estoque e vendas. 
@@ -24,3 +25,6 @@ g++ main.cpp dml.cpp -o programa
 
 &emsp;Nota-se que esse último comando funciona apenas no terminal do Windows, e não em outros terminais como do VS Code, no lugar, usa-se `./programa`.
 &emsp;Após fazer a criação dos arquivos auxiliares e testá-los, eu percebi que precisava incluir uma árvore de busca binária, que era um requisito do projeto. 
+
+### Árvore de busca binária
+&emsp;Para construção da árvore de busca, criei uma struct chamada `NoProduto`, representando um nó da árvore, com ponteiros para os nós filhos e um construtor para inicializá-lo. 
