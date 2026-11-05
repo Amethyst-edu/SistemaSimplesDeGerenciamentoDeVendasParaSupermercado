@@ -27,4 +27,4 @@ g++ main.cpp dml.cpp -o programa
 &emsp;Após fazer a criação dos arquivos auxiliares e testá-los, eu percebi que precisava incluir uma árvore de busca binária, que era um requisito do projeto. 
 
 ### Árvore de busca binária
-&emsp;Para construção da árvore de busca, criei uma struct chamada `NoProduto`, representando um nó da árvore, com ponteiros para os nós filhos e um construtor para inicializá-lo. 
+&emsp;Para construção da árvore de busca, criei uma struct chamada `NoProduto`, representando um nó da árvore, com ponteiros para os nós filhos e um construtor para inicializá-lo. Também adicionei as funções de inserção e busca na árvore, definidas em 'dml.cpp'.
